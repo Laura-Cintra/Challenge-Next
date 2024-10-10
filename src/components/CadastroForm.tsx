@@ -1,7 +1,9 @@
+"use client"
+
 import FormInput from './Forms/FormInputs';
 import FormButton from './Forms/FormButton';
 import FormFieldset from './Forms/FormFieldset';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function CadastroForm() {
     return (
@@ -55,7 +57,7 @@ export default function CadastroForm() {
             <FormButton type="reset" value="Limpar" />
 
             <p>Já possui uma conta cadastrada?</p>
-            <Link to="/login">Entrar em conta existente</Link>
+            <Link href="/login">Entrar em conta existente</Link>
             </FormFieldset>
         </form>
     );

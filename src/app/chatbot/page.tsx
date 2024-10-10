@@ -1,7 +1,6 @@
 import { ChatBotStyle } from "../../styled";
-import arrow from "../../assets/img/arrow_circle_up.png"
-
-
+import arrow from "@/app/img/arrow_circle_up.png"
+import Image from "next/image";
 
 export default function chatbot() {
     return (
@@ -19,21 +18,21 @@ export default function chatbot() {
                 <div className="bloco">
                     <h4>Bateria</h4>
                     <p>Se seu carro está com dificuldade para dar partida, o problema pode estar na bateria.</p>
-                    <img src={arrow} alt="Seta para cima" />
+                    <Image src={arrow} alt="Seta para cima" />
                 </div>
             </section>
             <section className="container6">
                 <div className="bloco">
                     <h4>Freio</h4>
                     <p>Está sentindo o pedal de freio mais duro ou com pouca resposta? Podemos te ajudar a verificar.</p>
-                    <img src={arrow} alt="Seta para cima" />
+                    <Image src={arrow} alt="Seta para cima" />
                 </div>
             </section>
             <section className="container7">
                 <div className="bloco">
                     <h4>Motor</h4>
                     <p>Problemas no motor podem variar de barulhos estranhos a perda de potência. Vamos encontrar a causa.</p>
-                    <img src={arrow} alt="Seta para cima" />
+                    <Image src={arrow} alt="Seta para cima" />
                 </div>
             </section>
             <section className="container8">

@@ -1,9 +1,12 @@
-import logoFigma from '../../assets/img/Logo-figma.png';
-import fotoHenrique from '../../assets/img/fotoHenrique.jpg';
-import fotoLaura from '../../assets/img/fotoLaura.jpg';
-import fotoLarissa from '../../assets/img/fotoLarissa.jpg';
+"use client"
+
+import logoFigma from '@/app/img/Logo-figma.png';
+import fotoHenrique from '@/app/img/fotoHenrique.jpg';
+import fotoLaura from '@/app/img/fotoLaura.jpg';
+import fotoLarissa from '@/app/img/fotoLarissa.jpg';
 import Participantes from '../../components/Participante';
 import { SobreNosStyle } from '../../styled';
+import Image from 'next/image';
 
 export default function SobreNos() {
   return (
@@ -15,7 +18,7 @@ export default function SobreNos() {
         rel="noopener noreferrer" 
         href="https://www.figma.com/file/whwMURtqIou1eqtucrqUzr/Prot%C3%B3tipo-Challenge?type=design&node-id=0%3A1&mode=design&t=iYevczBRwwXpuFpr-1"
       >
-        <img src={logoFigma} alt="Logo do Figma" className='logo-figma'/>
+        <Image src={logoFigma} alt="Logo do Figma" className='logo-figma'/>
       </a>
       
       <a 

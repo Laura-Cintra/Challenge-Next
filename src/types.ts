@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type FormInputProps = {
     type: string;
     name: string;
@@ -19,7 +21,7 @@ export type FormFieldsetProps = {
 }
 
 export type ParticipanteProps = {
-    foto: string;
+    foto: string | StaticImageData;
     nome: string;
     rm: string;
     funcao: string;

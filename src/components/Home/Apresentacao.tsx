@@ -1,5 +1,8 @@
-import vetor from "../assets/img/vetor.png";
+"use client"
+
+import vetor from "@/app/img/vetor.png";
 import { DivApresentacao } from '../../styled';
+import Image from "next/image";
 
 export default function Apresentacao() {
     return (
@@ -16,7 +19,7 @@ export default function Apresentacao() {
                 <hr className="esconder" id="espacinho" />
             </section>
             <section className="banner">
-                <img src={vetor} alt="homem fazendo manutenção de carro - imagem ilustrativa" />
+                <Image src={vetor} alt="homem fazendo manutenção de carro - imagem ilustrativa" />
             </section>
             <section className="omg">
                 <h3 className="mostrar">Qualidade e <br />Rapidez</h3>

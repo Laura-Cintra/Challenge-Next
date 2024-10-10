@@ -1,4 +1,6 @@
-import { Link } from 'react-router-dom';
+"use client"
+
+import Link from 'next/link';
 import FormInput from './Forms/FormInputs';
 import FormButton from './Forms/FormButton';
 import FormFieldset from './Forms/FormFieldset';
@@ -30,7 +32,7 @@ export default function LoginForm() {
             <FormButton type="reset" value="Limpar" />
 
             <p>Ainda não tem uma conta?</p>
-            <Link to="/cadastro">Cadastre-se agora!</Link>
+            <Link href="/cadastro">Cadastre-se agora!</Link>
             </FormFieldset>
         </form>
     );
