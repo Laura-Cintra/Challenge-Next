@@ -8,6 +8,8 @@ export type FormInputProps = {
     required?: boolean; // opcional
     maxLength?: number;
     pattern?: string;
+    min?: number;
+    max?: number;
 }
 
 export type FormButtonProps = {

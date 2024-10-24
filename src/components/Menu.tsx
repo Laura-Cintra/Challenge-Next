@@ -47,6 +47,7 @@ export default function Menu() {
                             <li><Link href='/chatbot'>ChatBot</Link></li>
                             <li><Link href='/sobre-nos'>Sobre Nós</Link></li>
                             <li><Link href='/login'>Login</Link></li>
+                            <li><Link href='/cad-carro'>Cadastrar Carro</Link></li>
 
                         </ul>
                     </nav>
@@ -59,7 +60,7 @@ export default function Menu() {
                         <li><Link href='/chatbot'>ChatBot</Link></li>
                         <li><Link href='/sobre-nos'>Sobre Nós</Link></li>
                         <li><Link href='/login'>Login</Link></li>
-
+                        <li><Link href='/cad-carro'>Cadastrar Carro</Link></li>
                     </ul>
                 </nav>
             </DivNavs>

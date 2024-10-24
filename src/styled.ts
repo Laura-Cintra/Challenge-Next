@@ -200,6 +200,33 @@ export const MainCont = styled.main`
             margin: 20px auto;
         } 
     }
+
+    .div_button{
+        text-align: center;
+        margin-bottom: 30px;
+
+        button{
+        font-size: 1.1em;
+        background-color: white;
+        padding: 10px;
+        font-weight: bolder;
+        border-radius: 5px;
+        border: solid 2px #013351;
+
+            a{
+                color: #013351;
+                text-decoration: none;
+            }
+        }
+    }
+
+    button:hover{
+        background-color: #013351;
+        
+        a{
+            color: white;
+        }
+    }
 `;
 
 // css Apresentacao.tsx
@@ -227,8 +254,9 @@ export const DivApresentacao = styled.div`
     }
 
     .banner>img {
-        max-width: 85%;
-        max-height: 85%;
+        max-width: 90%;
+        height: auto;
+
     }
 
     .h2 {
@@ -637,6 +665,9 @@ export const Motivo = styled.main`
         margin: 20px auto;
         font-size: 1.1rem;
     }
+    img{
+        height: auto;
+    }
 
 @media screen and (max-width: 800px) {
     .titulo_motivo {
@@ -729,19 +760,21 @@ export const MainFaq = styled.main`
     }
 `;
 
-// css sobre.tsx
+// css sobrenos.tsx
 export const SobreNosStyle = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 100vh; 
     text-align: center;
-    height: 100vh;
 
     header {
         color: #082737;
-        text-align: center;
         margin-top: 20px;
     }
-
     
+    img { height: auto; }
+
     h1 {
         font-size: 2.4em;
         padding: 15px;
@@ -751,6 +784,7 @@ export const SobreNosStyle = styled.div`
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        flex-grow: 1; 
     }
 
     h2 {
@@ -774,32 +808,31 @@ export const SobreNosStyle = styled.div`
         padding: 40px;
     }
 
-    section>img {
+    section > img {
         margin-top: 5%;
         max-width: 200px;
         border-radius: 50%;
     }
 
-    section>h3 {
+    section > h3 {
         text-align: center;
         font-size: 1.2em;
         font-weight: 800;
         padding: 5px;
     }
 
-    section>h4 {
+    section > h4 {
         font-size: 1.1em;
         font-weight: 800;
         color: #014D79;
     }
 
-    section>p {
+    section > p {
         font-size: 1.2em;
         padding: 5px;
         color: #013351;
     }
-`
-
+`;
 // css chatbot.tsx
 export const ChatBotStyle = styled.div`
 
@@ -1035,12 +1068,13 @@ p {
 
 // css Footer.tsx
 export const StyleFooter = styled.footer`
+    position: relative; 
+    bottom: 0; 
     width: 100%;
     background-color: #013351;
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
     
     p {
         margin: 0;
