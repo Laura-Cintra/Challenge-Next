@@ -74,7 +74,7 @@ nav ul li a {
         list-style: none;
         left: 0;
         width: 100%;
-        height: 50%;
+        height: 60%;
         justify-content: center;
         align-items: center;
         background-color: #001A28;
@@ -86,7 +86,7 @@ nav ul li a {
     nav {
         width: 100%;
         margin: 0;
-        height: 60px;
+        height: 80px;
         margin-top: -10px;
     }
     
@@ -98,6 +98,7 @@ nav ul li a {
         color: #ffffff;
         font-size: 24px;
         text-decoration: none;
+        padding: 2px;
     }
 
     .nav-links.active {
@@ -1079,5 +1080,91 @@ export const StyleFooter = styled.footer`
     p {
         margin: 0;
         padding: 10px;
+    }
+`;
+
+export const StyledTable = styled.div`
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    min-height: 100vh;
+
+    h1 {
+        color: #082737;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow-x: auto;
+    }
+
+    thead {
+        background: #013351;
+        color: white;
+    }
+
+    th, td {
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        min-width: 120px;
+        text-align: center;
+    }
+
+    tbody tr:hover {
+        background: #f1f1f1;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .edit, .delete {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon {
+        font-size: 1.5rem; /* Aumentar o tamanho do ícone */
+        transition: color 0.2s, transform 0.2s;
+    }
+
+    .edit .icon {
+        color: #007bff;
+    }
+
+    .delete .icon {
+        color: #dc3545;
+    }
+
+    .edit:hover .icon {
+        color: #0056b3;
+        transform: scale(1.1);
+    }
+
+    .delete:hover .icon {
+        color: #c82333;
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+        table {
+            display: block;
+            overflow-x: auto;
+        }
+        th, td {
+            white-space: nowrap;
+        }
     }
 `;

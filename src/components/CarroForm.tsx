@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import FormInput from './Forms/FormInputs';
 import FormButton from './Forms/FormButton';

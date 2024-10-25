@@ -4,12 +4,11 @@ export type FormInputProps = {
     type: string;
     name: string;
     id: string;
-    placeholder: string;
+    placeholder?: string;
     required?: boolean; // opcional
     maxLength?: number;
     pattern?: string;
-    min?: number;
-    max?: number;
+    value?: string | number;
 }
 
 export type FormButtonProps = {
