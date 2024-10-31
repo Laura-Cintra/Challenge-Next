@@ -1,5 +1,5 @@
-import LoginForm from '../../components/Loginform';
-import { MainCont } from '../../styled';
+import LoginForm from "@/components/Loginform";
+import { MainCont } from "@/styled";
 
 export default function Login() {
     return (

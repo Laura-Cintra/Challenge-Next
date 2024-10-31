@@ -1,10 +1,10 @@
 "use client"
 
-import { useState } from 'react';
-import Link from 'next/link';
 import logoMenu from "@/app/img/Logo-nav.png";
-import { DivNavs } from "../styled";
 import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import { DivNavs } from "../styled";
 
 export default function Menu() {
     const [menuActive, setMenuActive] = useState(false);
@@ -46,8 +46,8 @@ export default function Menu() {
                             <li><Link href='/'>Home</Link></li>
                             <li><Link href='/chatbot'>ChatBot</Link></li>
                             <li><Link href='/sobre-nos'>Sobre Nós</Link></li>
-                            <li><Link href='/login'>Login</Link></li>
-                            <li><Link href='/cad-carro'>Cadastrar Carro</Link></li>
+                            <li><Link href='/usuario/login'>Login</Link></li>
+                            <li><Link href='/carro/cad-carro'>Cadastrar Carro</Link></li>
 
                         </ul>
                     </nav>
@@ -59,8 +59,8 @@ export default function Menu() {
                         <li><Link href='/'>Home</Link></li>
                         <li><Link href='/chatbot'>ChatBot</Link></li>
                         <li><Link href='/sobre-nos'>Sobre Nós</Link></li>
-                        <li><Link href='/login'>Login</Link></li>
-                        <li><Link href='/cad-carro'>Cadastrar Carro</Link></li>
+                        <li><Link href='/usuario/login'>Login</Link></li>
+                        <li><Link href='/carro/cad-carro'>Cadastrar Carro</Link></li>
                     </ul>
                 </nav>
             </DivNavs>

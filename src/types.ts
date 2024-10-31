@@ -9,6 +9,7 @@ export type FormInputProps = {
     maxLength?: number;
     pattern?: string;
     value?: string | number;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
 }
 
 export type FormButtonProps = {
@@ -27,4 +28,17 @@ export type ParticipanteProps = {
     rm: string;
     funcao: string;
     githubUrl: string;
-  }
+}
+
+export type ModalProps = {
+    open: boolean;
+    onClose: () => void;
+    children: React.ReactNode;
+}
+
+export type CarroProps = {
+    id: number;
+    placa: string;
+    modelo: string;
+    marca: string;
+}

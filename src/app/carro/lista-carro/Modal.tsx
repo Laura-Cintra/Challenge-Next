@@ -1,4 +1,4 @@
-import { ModalProps } from "@/types";
+import { ModalProps } from "@/types"
 
 export default function Modal({ open, onClose, children }: ModalProps) {
 

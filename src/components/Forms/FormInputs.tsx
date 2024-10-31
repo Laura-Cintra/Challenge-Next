@@ -1,6 +1,6 @@
 import { FormInputProps } from '../../types';
 
-export default function FormInputs({type, name, id, placeholder, required, maxLength, pattern}: FormInputProps) {
+export default function FormInputs({type, name, id, placeholder, required, maxLength, pattern, value, onChange}: FormInputProps) {
     return(
         <div>
             <input
@@ -11,6 +11,8 @@ export default function FormInputs({type, name, id, placeholder, required, maxLe
             required={required}
             maxLength={maxLength}
             pattern={pattern}
+            value={value}
+            onChange={onChange}
             />
         </div>
     )
