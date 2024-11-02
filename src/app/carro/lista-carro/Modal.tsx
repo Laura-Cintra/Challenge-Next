@@ -1,7 +1,5 @@
 import { ModalProps } from "@/types";
-import { ModalContainer } from "../../../styled"; // ajuste o caminho se necessário
-import { Button } from "../../../styled"; // ajuste o caminho se necessário
-import { FaTrashAlt } from 'react-icons/fa';
+import { ModalContainer } from "../../../styled";
 
 export default function Modal({ open, onClose, children }: ModalProps) {
     return (
