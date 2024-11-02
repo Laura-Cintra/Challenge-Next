@@ -712,9 +712,10 @@ export const Motivo = styled.main`
     grid-area: titulo_motivo;
     color: white;
     display: flex;
-    align-items: start;
+    align-items: center;
     font-size: 1rem;
 }
+
 .conteudo_motivo1>img,
 .conteudo_motivo2>img,
 .conteudo_motivo3>img {
@@ -796,12 +797,15 @@ export const SobreNosStyle = styled.div`
     }
 
     .logo-figma {
-        max-width: 70px;
+        max-width: 100px;
         padding: 20px;
+        display: flex;
+        margin: 0 auto;
     }
 
     a {
         color: #014D79;
+        font-size: 1.2em;
     }
 
     section {
@@ -915,7 +919,7 @@ export const ChatBotStyle = styled.div`
 input {
     background-color: #013351;
     color: white;
-    padding: 15px;
+    padding: 30px;
     height: 40px;
     width: 90%;
     font-size: 1.1em;

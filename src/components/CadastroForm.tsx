@@ -34,7 +34,7 @@ export default function CadastroForm() {
             return;
         }
 
-        const { confirmasenha, ...dadosRequisicao } = cliente; // removendo o confirmasenha para requisição
+        const {...dadosRequisicao } = cliente;
 
         const cabecalho = {
             method: "POST",
@@ -87,7 +87,7 @@ export default function CadastroForm() {
                     value={cliente.cpf}
                     onChange={handleChange}
                     maxLength={11}
-
+                    required
                 />
 
                 <label htmlFor="idemail">E-mail</label>
@@ -98,6 +98,7 @@ export default function CadastroForm() {
                     placeholder="Digite seu email"
                     value={cliente.email}
                     onChange={handleChange}
+                    required
                 />
 
                 <label htmlFor="idsenha">Senha</label>
@@ -108,8 +109,8 @@ export default function CadastroForm() {
                     placeholder="Digite sua senha"
                     value={cliente.senha}
                     onChange={handleChange}
-
                     maxLength={12}
+                    required
                 />
 
                 <label htmlFor="idconfirmasenha">Confirmar Senha</label>
@@ -121,6 +122,7 @@ export default function CadastroForm() {
                     maxLength={12}
                     value={cliente.confirmasenha}
                     onChange={handleChange}
+                    required
 
                 />
 

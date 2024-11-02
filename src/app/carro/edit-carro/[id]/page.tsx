@@ -87,7 +87,9 @@ export default function EditaCarro({ params }: { params: { id: number } }) {
                         name="placa"
                         id="idplaca"
                         value={carro.placa}
+                        maxLength={7}
                         onChange={handleChange}
+                        required
                     />
 
                     <label htmlFor="idmodelo">Modelo</label>
@@ -97,6 +99,7 @@ export default function EditaCarro({ params }: { params: { id: number } }) {
                         id="idmodelo"
                         value={carro.modelo}
                         onChange={handleChange}
+                        required
                     />
 
                     <label htmlFor="idmarca">Marca</label>
@@ -106,6 +109,7 @@ export default function EditaCarro({ params }: { params: { id: number } }) {
                         id="idmarca"
                         value={carro.marca}
                         onChange={handleChange}
+                        required
                     />
                     <FormButton type="submit" value="Editar Carro" />
                 </FormFieldset>

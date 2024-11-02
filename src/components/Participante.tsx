@@ -12,7 +12,7 @@ export default function Participantes({ foto, nome, rm, funcao, githubUrl}: Part
         <h4>RM - {rm}</h4>
         <p>{funcao}</p>
         <a target="_blank" rel="noopener noreferrer" href={githubUrl}>
-          <Image src={logoGithub} alt="Logo do GitHub"/>
+          <Image src={logoGithub} alt="Logo do GitHub" className='flex ml-auto mr-auto'/>
         </a>
       </section>
 );

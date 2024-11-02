@@ -24,7 +24,7 @@ export default function SobreNos() {
       <a 
         target="_blank" 
         rel="noopener noreferrer" 
-        href="https://github.com/Laura-Cintra/Challenge-React"
+        href="https://github.com/Laura-Cintra/challenge-next"
       >
         <h3>Repositório Github</h3>
       </a>
