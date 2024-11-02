@@ -37,7 +37,7 @@ export type ModalProps = {
 }
 
 export type CarroProps = {
-    id: number;
+    idVeiculo: number;
     placa: string;
     modelo: string;
     marca: string;

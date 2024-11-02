@@ -26,24 +26,23 @@ export default function LoginForm() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
+    
         const cabecalho = {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(usuario),
         };
-
+    
         try {
             const response = await fetch("http://localhost:8080/chatcarcliente/logincliente", cabecalho);
             const responseText = await response.text();
-
+    
             let data;
             if (responseText) {
                 data = JSON.parse(responseText);
             }
-
-            if (response.ok) {
-                // Montando o objeto de usuário
+    
+            if (response.ok && data) {
                 const userData = {
                     id_cliente: data.idCliente,
                     nome: data.nome,
@@ -52,12 +51,15 @@ export default function LoginForm() {
                     senha: usuario.senha
                 };
                 login(userData); // função de login do contexto
+                alert("Login realizado com sucesso!");
+
                 navigate.push('/carro/cad-carro');
             } else {
                 alert("E-mail ou senha incorretos!");
             }
         } catch (error) {
             console.error("Erro ao fazer login", error);
+            alert("Ocorreu um erro de conexão.");
         }
     };
 

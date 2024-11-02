@@ -45,7 +45,6 @@ export default function CarroForm() {
 
         try {
             const response = await fetch("http://localhost:8080/chatcarveiculo/cadastraveiculo", cabecalho);
-            // const data = await response.json();
 
             if (response.ok) {
                 alert(`Carro ${carro.placa} cadastrado com sucesso!`);
@@ -75,7 +74,7 @@ export default function CarroForm() {
                         id="idplaca"
                         placeholder="Digite a placa do carro"
                         value={carro.placa}
-                        maxLength={8}
+                        maxLength={7}
                         onChange={handleChange}
                         required
                     />

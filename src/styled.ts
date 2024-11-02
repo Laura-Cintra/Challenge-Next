@@ -130,7 +130,7 @@ nav ul li a {
 // css login.tsx e cadastro.tsx
 export const MainCont = styled.main`
 
-    max-height: 125vh;
+    max-height: 130vh;
     min-height: 80vh;
 
     form {
@@ -162,6 +162,7 @@ export const MainCont = styled.main`
         border: 2px solid #9D9D9D;
         border-radius: 5px;
         width: 95%;
+        cursor: pointer;
     }
 
     input[type="submit"] {
@@ -1076,6 +1077,7 @@ export const StyleFooter = styled.footer`
     color: white;
     text-align: center;
     padding: 10px 0;
+    margin-top: 20px;
     
     p {
         margin: 0;
@@ -1104,7 +1106,7 @@ export const StyledTable = styled.div`
         overflow-x: auto;
     }
 
-    thead {
+    thead, tfoot {
         background: #013351;
         color: white;
     }
@@ -1168,3 +1170,58 @@ export const StyledTable = styled.div`
         }
     }
 `;
+
+export const Button = styled.button<{ variant: 'light' | 'danger' }>`
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  
+  background-color: ${({ variant }) => (variant === 'light' ? '#ffffff' : '#e3342f')};
+  color: ${({ variant }) => (variant === 'light' ? '#6b7280' : '#ffffff')};
+
+  &:hover {
+    background-color: ${({ variant }) => (variant === 'light' ? '#f3f4f6' : '#c53030')};
+  }
+;`
+
+export const ModalContainer = styled.div<{ open: boolean }>`
+
+display: ${({ open }) => (open ? 'flex' : 'none')};
+position: fixed;
+inset: 0;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.2);
+transition: visibility 0.3s, opacity 0.3s;
+
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    padding: 1.5rem;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: scale(${({ open }) => (open ? '1' : '1.25')});
+    opacity: ${({ open }) => (open ? '1' : '0')};
+}
+
+.close-button {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.5rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: #a0aec0;
+
+    &:hover {
+    background-color: #f7fafc;
+    color: #4a5568;
+    }
+}
+; `
