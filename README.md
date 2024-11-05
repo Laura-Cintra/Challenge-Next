@@ -11,10 +11,10 @@ O **ChatCar** é um sistema que visa transformar o mercado automotivo, oferecend
 - **Diagnóstico Automotivo**: Interaja com a nossa IA que, com base nas características do seu problema, te ajudará a identificar possíveis causas.
 - **Orçamento**: Obtenha estimativas de custo para os reparos sugeridos, com base no diagnóstico realizado.
 - **Cadastro e Gerenciamento de Carros**:
-  **Cadastrar carro**: Registre os veículos de sua propriedade para gerenciar suas manutenções e diagnósticos.
-  **Listar carros**: Visualize todos os veículos cadastrados na sua conta.
-  **Editar carro**: Atualize as informações de qualquer veículo cadastrado, como modelo, marca, e outros dados importantes.
-  **Excluir carro**: Remova veículos cadastrados que não pertencem mais ao seu portfólio.
+  - **Cadastrar carro**: Registre os veículos de sua propriedade para gerenciar suas manutenções e diagnósticos.
+  - **Listar carros**: Visualize todos os veículos cadastrados na sua conta.
+  - **Editar carro**: Atualize as informações de qualquer veículo cadastrado, como modelo, marca, e outros dados importantes.
+  - **Excluir carro**: Remova veículos cadastrados que não pertencem mais ao seu portfólio.
 - **Login e Cadastro**: Faça login ou crie uma conta para acessar todas as funcionalidades da plataforma, como o gerenciamento de carros e o assistente virtual.
 - **Sobre nós**: Conheça o time por trás do ChatCar, além de acessar o repositório do projeto e o link do protótipo utilizado no desenvolvimento.
 
